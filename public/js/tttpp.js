@@ -9,8 +9,8 @@ $(function()
 	init();
 
 	$('body #new_game').click(addPlayersForm);
-	$('.more').live('click', incrementPoints);
-	$('.less').live('click', decrementPoints);
+	$('.more').live('click tap', incrementPoints);
+	$('.less').live('click tap', decrementPoints);
 	$('tbody tr').live('mouseover mouseout', function(event){
 		if (event.type == 'mouseover')
 			$(this).addClass('hovered');
