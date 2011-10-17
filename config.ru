@@ -1,4 +1,4 @@
-require 'tttpp'
+require File.expand_path("../tttpp", __FILE__)
 
 set :root, File.dirname(__FILE__)
 
