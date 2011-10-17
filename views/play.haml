@@ -1,0 +1,23 @@
+.grid_5
+  %img.displayed{:src => 'images/TTTpp_Logo.png'}
+%div{:class => ['grid_10 prefix_1']}
+  %table.center.pp{:style => 'display:none', :id => 'active_players'}
+    %thead
+      %tr
+        %th Player
+        %th Points
+    %tbody
+  .center
+    %button{:type => 'button', :id => 'new_game'}New Game
+.clear
+%form{:style => 'display:none', :id => 'add_players_form'}
+  %fieldset
+    %div.center
+      %div{:id => 'new_players'}
+        - 8.times do |i|
+          %label{:for => "name"} Player:
+          %input{:type => "text", :name => "name", :class => "new_player"}
+          %br
+      %a{:href => '#', :id => 'add_more_players'}More
+      %br
+      %input{:type => "submit", :value => "Add Players", :class => "button"}

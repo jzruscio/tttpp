@@ -1,0 +1,13 @@
+%html
+  %head
+    %script{:type => 'text/javascript', :src => '/js/jquery.1.5.1.min.js'}
+    %script{:type => 'text/javascript', :src => '/js/jquery.simplemodal.1.4.1.min.js'}
+    %script{:type => 'text/javascript', :src => '/js/tttpp.js'}
+    %link{:type => 'text/css', :rel => 'stylesheet', :href => '/sass/960.css'}
+    %link{:type => 'text/css', :rel => 'stylesheet', :href => '/sass/stylesheet.css'}
+
+    %title TTTPP
+  %body.bp
+    .container_16
+      =haml :nav, :layout => false
+      = yield
