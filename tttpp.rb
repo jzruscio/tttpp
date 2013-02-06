@@ -44,4 +44,4 @@ __END__
 .grid_10
   .center
     %h1.orange Are you Ready?
-    %a.orange{:href => '/play'}Play
+    %a.orange{:href => '/play'}Start Game
